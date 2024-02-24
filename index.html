@@ -38,33 +38,18 @@
 
 <div class="background-container">
   <main style="z-index: 2;">
-    <!-- Articles will be dynamically added here -->
+     <!-- Articles will be dynamically added here -->
+     <article>
+      <h2><a href="booklist.html">My Reading List</a></h2>
+      <p>I'm planning to add info about my favorite books here.</p>
+    </article>
+    <article>
+      <h2><a href="https://www.thecrag.com/en/climbing/united-states/iowa">Iowa Rock Climbing Locations</a></h2>
+      <p>I just found this, and haven't spent much time here yet.</p>
+    </article>
+    <!-- Add more articles as needed -->
   </main>
 </div>
-
-    
-<script>
-
-    // Example of adding articles dynamically
-const articlesContainer = document.querySelector('main');
-
-const articles = [
-  { title: 'Article 1', content: 'Lorem ipsum dolor sit amet...' },
-  { title: 'Article 2', content: 'Consectetur adipiscing elit...' },
-  // Add more articles as needed
-];
-
-articles.forEach(article => {
-  const articleElement = document.createElement('div');
-  articleElement.classList.add('article');
-  articleElement.innerHTML = `
-    <h2>${article.title}</h2>
-    <p>${article.content}</p>
-  `;
-  articlesContainer.appendChild(articleElement);
-});
-
-    </script>
 
 </body>
 </html>
