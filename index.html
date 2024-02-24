@@ -1,9 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;,">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lake Bottom Base</title>
+
+<style>
+    
+    .background-container {
+    background-image: url('Nihon.jpeg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-attachment: fixed;
+    height: 100vh;
+    }
+
+    main {
+	max-width: 75vw;
+	width: 85%;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background: white;
+	border-radius: 20px;
+	padding: 20px;
+	border: 2px solid lightgray;
+    }
+   
+</style>
 </head>
+
 <body>
-This is my homebrew website. More to come. <a href="booklist.html">My reading list.</a>
+
+<div class="background-container">
+  <main style="z-index: 2;">
+    <!-- Articles will be dynamically added here -->
+  </main>
+</div>
+
+    
+<script>
+
+    // Example of adding articles dynamically
+const articlesContainer = document.querySelector('main');
+
+const articles = [
+  { title: 'Article 1', content: 'Lorem ipsum dolor sit amet...' },
+  { title: 'Article 2', content: 'Consectetur adipiscing elit...' },
+  // Add more articles as needed
+];
+
+articles.forEach(article => {
+  const articleElement = document.createElement('div');
+  articleElement.classList.add('article');
+  articleElement.innerHTML = `
+    <h2>${article.title}</h2>
+    <p>${article.content}</p>
+  `;
+  articlesContainer.appendChild(articleElement);
+});
+
+    </script>
+
 </body>
 </html>
