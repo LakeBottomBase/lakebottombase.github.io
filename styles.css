@@ -44,3 +44,7 @@ article {
     background-color: gray;
     color: white;
     }
+
+.additional-text {
+    text-align: right; /* Justify text to the right */
+    }
