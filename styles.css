@@ -11,7 +11,7 @@
 main {
 	max-width: 75vw;
     width: 85%;
-    argin: auto;
+    margin: auto;
 	margin-top: 10px;
 	margin-bottom: 10px;
     opacity: 0.85;
