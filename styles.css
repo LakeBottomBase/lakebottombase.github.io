@@ -27,7 +27,7 @@ article {
 
 .index-links {
     display: flex;
-    justify-content: flex-end; /* justify right side of flex container */
+    justify-content: center; /* justify right side of flex container */
     margin-bottom: 20px; /* Add some space between links and articles */
     }
     
