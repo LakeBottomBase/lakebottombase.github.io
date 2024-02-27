@@ -1,0 +1,26 @@
+.background-container {
+    background-image: url('Nihon.jpeg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-attachment: fixed;
+    height: 100vh;
+    padding-top: 50px;
+    }
+
+main {
+	max-width: 75vw;
+    width: 85%;
+    argin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+    opacity: 0.85;
+	background: rgb(187, 187, 188);
+	border-radius: 20px;
+	padding: 20px;
+	border: 2px solid darkgray;
+    }
+
+article {
+    margin-bottom: 40px; /* Adjust the value as needed */
+    }   
