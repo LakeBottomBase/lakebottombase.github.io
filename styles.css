@@ -27,7 +27,7 @@ article {
 
 .index-links {
     display: flex;
-    justify-content: space-between; /* Distribute links evenly */
+    justify-content: flex-end; /* justify right side of flex container */
     margin-bottom: 20px; /* Add some space between links and articles */
     }
     
@@ -37,9 +37,4 @@ article {
     padding: 5px 10px;
     border-radius: 5px;
     background-color: lightgray;
-    }
-    
-.index-links a:hover {
-    background-color: gray;
-    color: white;
     }
